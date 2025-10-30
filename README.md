@@ -30,7 +30,6 @@ npm install
 Create a `.env` file in `backend/` with (example):
 ```env
 PORT=5000
-JWT_SECRET=your_jwt_secret
 NODE_ENV=development
 ```
 
