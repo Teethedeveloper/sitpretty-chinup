@@ -1,0 +1,201 @@
+# =========================
+# Node / npm
+# =========================
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Optional npm cache
+.npm
+
+# =========================
+# Build / output
+# =========================
+# Vite / production builds
+dist/
+build/
+
+# Vite cache
+.vite/
+.vite-deps/
+
+# Coverage reports
+coverage/
+coverage-final.json
+
+# TypeScript build outputs & incremental files
+*.tsbuildinfo
+
+# If your build emits compiled JS, ignore them (adjust if you keep compiled JS)
+*.js
+*.js.map
+
+# =========================
+# Environment / secrets
+# =========================
+# Environment variable files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# =========================
+# ML / TensorFlow.js artifacts
+# =========================
+# Local model files and large binary weights produced during experiments
+model.json
+*.weights.bin
+weights.*.bin
+*.bin
+
+# =========================
+# Media / uploads / temp
+# =========================
+# Temporary uploads, recordings, and caches
+tmp/
+temp/
+uploads/
+*.mp4
+*.webm
+
+# =========================
+# OS / Editor / IDE
+# =========================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Misc / package managers
+# =========================
+.pnpm-debug.log
+.pnp.js
+
+# Yarn v2/v3 cache (keep exceptions as needed)
+.yarn/*
+!!.yarn/releases
+!!.yarn/plugins
+!!.yarn/sdks
+!!.yarn/patches
+
+# End of file
+```// filepath: c:\Users\eletontee\sitpretty_chinup\.gitignore
+# =========================
+# Node / npm
+# =========================
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Optional npm cache
+.npm
+
+# =========================
+# Build / output
+# =========================
+# Vite / production builds
+dist/
+build/
+
+# Vite cache
+.vite/
+.vite-deps/
+
+# Coverage reports
+coverage/
+coverage-final.json
+
+# TypeScript build outputs & incremental files
+*.tsbuildinfo
+
+# If your build emits compiled JS, ignore them (adjust if you keep compiled JS)
+*.js
+*.js.map
+
+# =========================
+# Environment / secrets
+# =========================
+# Environment variable files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# =========================
+# ML / TensorFlow.js artifacts
+# =========================
+# Local model files and large binary weights produced during experiments
+model.json
+*.weights.bin
+weights.*.bin
+*.bin
+
+# =========================
+# Media / uploads / temp
+# =========================
+# Temporary uploads, recordings, and caches
+tmp/
+temp/
+uploads/
+*.mp4
+*.webm
+
+# =========================
+# OS / Editor / IDE
+# =========================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Misc / package managers
+# =========================
+.pnpm-debug.log
+.pnp.js
+
+# Yarn v2/v3 cache (keep exceptions as needed)
+.yarn/*
+!!.yarn/releases
+!!.yarn/plugins
+!!.yarn/sdks
+!!.yarn/patches
+
+# End of file

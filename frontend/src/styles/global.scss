@@ -1,0 +1,134 @@
+@use '_Variables.scss' as *;
+
+/* --------------------
+   Base styles
+--------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Asap', sans-serif;
+  background: #f5f5f7;
+  color: #737985;
+  line-height: 1.6;
+  padding: 3svw;
+  min-height: 100svh;
+}
+
+/* --------------------
+   App Container
+--------------------- */
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 3svw;
+  min-height: 100svh;
+}
+
+/* --------------------
+   Header
+--------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: color-mix(in oklab, #fff 70%, hsl(var(--hue-primary) 50% 50%));
+}
+
+header button {
+  font-family: 'Asap', sans-serif;
+  background: linear-gradient(90deg in oklch, var(--soft-purple), var(--soft-blue) 24% 32%, var(--soft-purple));
+  border: 1px solid hsl(var(--hue-secondary), 13%, 18.5%);
+  border-radius: calc(var(--radius) * 0.333);
+  padding: 0.75em 1.5em;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+
+header button:hover {
+  background: linear-gradient(90deg in oklch, var(--soft-blue), var(--soft-purple) 20% 32%, var(--soft-blue));
+}
+
+/* --------------------
+   Posture Detector
+--------------------- */
+.posture-detector {
+  position: relative;
+  border-radius: var(--radius);
+  border: var(--border) solid var(--border-color);
+  background: linear-gradient(235deg, hsl(var(--hue-primary) 50% 10% / 0.8), hsl(var(--hue-primary) 50% 10% / 0) 33%), 
+              linear-gradient(45deg, hsl(var(--hue-secondary) 50% 10% / 0.8), hsl(var(--hue-secondary) 50% 10% / 0) 33%), 
+              linear-gradient(hsl(220deg 25% 4.8% / 0.66));
+  backdrop-filter: blur(12px);
+  box-shadow: hsl(var(--hue-secondary) 50% 2%) 0px 10px 16px -8px, hsl(var(--hue-secondary) 50% 4%) 0px 20px 36px -14px;
+  padding: 2em;
+  max-width: 800px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.posture-detector button:disabled {
+  background: hsl(var(--hue-secondary), 10%, 60%);
+  cursor: not-allowed;
+}
+
+/* --------------------
+   Dashboard
+--------------------- */
+.dashboard {
+  border-radius: var(--radius);
+  border: var(--border) solid var(--border-color);
+  background: linear-gradient(235deg, hsl(var(--hue-primary) 50% 10% / 0.8), hsl(var(--hue-primary) 50% 10% / 0) 33%), 
+              linear-gradient(45deg, hsl(var(--hue-secondary) 50% 10% / 0.8), hsl(var(--hue-secondary) 50% 10% / 0) 33%), 
+              linear-gradient(hsl(220deg 25% 4.8% / 0.66));
+  backdrop-filter: blur(12px);
+  box-shadow: hsl(var(--hue-secondary) 50% 2%) 0px 10px 16px -8px, hsl(var(--hue-secondary) 50% 4%) 0px 20px 36px -14px;
+  padding: 2em;
+  max-width: 800px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* --------------------
+   Inputs
+--------------------- */
+.posture-detector input,
+.posture-detector select,
+.dashboard input,
+.dashboard select {
+  padding: 1em 1.2em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+
+/* --------------------
+   Responsive
+--------------------- */
+@media screen and (max-width: 600px) {
+  #app { padding: 2svw; }
+  header { gap: 0.75em; align-items: center; }
+  header h1 { font-size: 1.5rem; }
+  header button { padding: 0.6em 1.2em; }
+  .posture-detector,
+  .dashboard { padding: 1.5em; gap: 1.5em; max-width: 95%; margin: 1.5em auto; }
+}

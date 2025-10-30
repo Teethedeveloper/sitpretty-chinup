@@ -1,0 +1,25 @@
+/* --------------------
+   Color & Theme Variables
+--------------------- */
+:root {
+  /* Primary & secondary hues */
+  --hue-primary: 255;
+  --hue-secondary: 222;
+
+  /* Border & radius */
+  --radius: 1.375rem; 
+  --border: 1px;
+  --border-color: hsl(var(--hue-secondary), 12%, 20%);
+  --ease: cubic-bezier(0.5, 1, 0.89, 1);
+
+  /* Soft colors for UI elements */
+  --soft-purple: hsl(var(--hue-primary), 50%, 85%);
+  --soft-blue: hsl(var(--hue-secondary), 40%, 80%);
+  --soft-green: hsl(160, 40%, 80%);
+  --soft-red: hsl(0, 40%, 80%);
+
+  /* Foreground color */
+  --fg: hsl(0 0 100%);
+}
+
+

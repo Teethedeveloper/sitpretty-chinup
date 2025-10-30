@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Compatible with React and modern browsers
+    "lib": ["DOM", "DOM.Iterable", "ES2020"], // DOM for React, canvas, react-webcam
+    "module": "ESNext",
+    "moduleResolution": "Bundler", // Vite’s bundler
+    "jsx": "react-jsx", // React JSX/TSX support
+    "strict": true,
+    "noEmit": true, // Vite handles compilation
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".", // Simplify relative imports
+    "esModuleInterop": true // For compatibility with CommonJS modules (e.g., D3.js)
+  },
+  "include": ["src/**/*", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
